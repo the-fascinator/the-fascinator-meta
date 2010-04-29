@@ -20,7 +20,7 @@
 	</licenses>
 	<issueManagement>
 		<system>Trac</system>
-		<url>http://fascinator.usq.edu.au/trac/</url>
+		<url>http://fascinator.usq.edu.au/trac</url>
 	</issueManagement>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -164,7 +164,7 @@
 		<profile>
 			<id>rapid-report</id>
 			<activation>
-				<activeByDefault>true</activeByDefault>
+				<activeByDefault>false</activeByDefault>
 			</activation>
 			<reporting>
 				<plugins>
@@ -218,6 +218,9 @@
 		</profile>
 		<profile>
 			<id>full-report</id>
+			<activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
 			<reporting>
 				<plugins>
 					<plugin>
@@ -228,11 +231,13 @@
 							<aggregate>true</aggregate>
 						</configuration>
 					</plugin>
+					<!-- 
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-changes-plugin</artifactId>
 						<version>2.3</version>
 					</plugin>
+					 -->
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-javadoc-plugin</artifactId>

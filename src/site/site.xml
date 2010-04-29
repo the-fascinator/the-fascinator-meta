@@ -18,18 +18,6 @@
 			<item name="Trac" href="http://fascinator.usq.edu.au/trac" />
 		</links>
 
-		<menu name="Development Code">
-			<item name="The Fascinator" href="the-fascinator/" />
-			<!--
-				<item name="Contributed Plugins"
-				href="/maven-site/au.edu.usq.fascinator.contrib/fascinator/" />
-			-->
-			<!--
-				<item name="Maven Plugins"
-				href="/maven-site/au.edu.usq.fascinator.contrib/maven/" />
-			-->
-		</menu>
-
 		<menu name="Other Applications">
 			<item name="Watcher" href="http://fascinator.usq.edu.au/trac/wiki/Watcher" />
 			<!-- <item name="Feed Reader" href="" />  -->
