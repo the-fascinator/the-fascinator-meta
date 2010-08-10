@@ -1,11 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
  <modelVersion>4.0.0</modelVersion>
  <groupId>au.edu.usq.fascinator</groupId>
  <artifactId>organisation</artifactId>
  <packaging>pom</packaging>
  <name>Fascinator Project</name>
- <version>0.3.3-SNAPSHOT</version>
+ <version>0.4.0</version>
  <description>
   This Maven project provides a central point for
   information regarding The
@@ -27,17 +26,16 @@
  <properties>
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   <jdk-version>1.6</jdk-version>
-  <svn-repository>http://fascinator.usq.edu.au/svn/
-		</svn-repository>
+  <svn-repository>http://fascinator.usq.edu.au/svn/</svn-repository>
+  <svn-dev-repository>https://fascinator.usq.edu.au/svn-auth/</svn-dev-repository>
   <svn-parent-dir>project_meta/trunk</svn-parent-dir>
   <svn-path>${svn-repository}${svn-parent-dir}</svn-path>
+  <svn-dev-path>${svn-dev-repository}${svn-parent-dir}</svn-dev-path>
  </properties>
  <scm>
-  <url>http://fascinator.usq.edu.au/svn/project_meta/trunk</url>
-  <connection>scm:svn:http://fascinator.usq.edu.au/svn/project_meta/trunk
-		</connection>
-  <developerConnection>scm:svn:http://fascinator.usq.edu.au/svn/project_meta/trunk
-		</developerConnection>
+  <url>http://fascinator.usq.edu.au/svn/project_meta/tags/organisation-0.4.0</url>
+  <connection>scm:svn:http://fascinator.usq.edu.au/svn/project_meta/tags/organisation-0.4.0</connection>
+  <developerConnection>scm:svn:https://fascinator.usq.edu.au/svn-auth/project_meta/tags/organisation-0.4.0</developerConnection>
  </scm>
  <developers>
   <developer>
@@ -99,7 +97,7 @@
  <inceptionYear>2009</inceptionYear>
  <ciManagement>
   <system>Hudson</system>
-  <url>http://build.adfi.usq.edu.au/ci</url>
+  <url>https://build.adfi.usq.edu.au/ci</url>
  </ciManagement>
  <mailingLists>
   <mailingList>
