@@ -19,17 +19,16 @@
     </licenses>
     <url>https://sites.google.com/site/fascinatorhome/</url>
     <issueManagement>
-        <system>Google</system>
-        <url>http://code.google.com/p/the-fascinator/issues/list</url>
+        <system>GitHub</system>
+        <url>https://github.com/the-fascinator/the-fascinator-meta/issues</url>
     </issueManagement>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jdk-version>1.6</jdk-version>
     </properties>
     <scm>
-        <url>http://the-fascinator.googlecode.com/svn/project_meta/trunk/</url>
-        <connection>scm:svn:http://the-fascinator.googlecode.com/svn/project_meta/trunk/</connection>
-        <developerConnection>scm:svn:https://the-fascinator.googlecode.com/svn/project_meta/trunk/</developerConnection>
+        <url>https://github.com/the-fascinator/the-fascinator-meta</url>
+        <developerConnection>scm:git:https://github.com/the-fascinator/the-fascinator-meta.git</developerConnection>
     </scm>
     <developers>
         <developer>
