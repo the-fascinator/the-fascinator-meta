@@ -1,0 +1,19 @@
+sudo: required
+language: java
+services:
+- docker
+before_install:
+- mkdir /tmp/build
+- docker pull qcifengineering/redbox-builder
+- docker run -v /tmp/build:/build -e "CLONEPATH=https://github.com/the-fascinator/the-fascinator-meta.git"
+  qcifengineering/redbox-builder
+install: true
+script: true
+after_success:
+- docker run -v /tmp/build:/build -e "SONATYPE_USERNAME=$SONATYPE_USERNAME" -e "SONATYPE_PASSWORD=$SONATYPE_PASSWORD"
+  qcifengineering/redbox-builder /bin/bash -c "cd build/src;mvn --settings /m2_repo/travis-settings.xml
+  -Dmaven.repo.local=/m2_repo -DskipTests=true deploy"
+env:
+  global:
+  - secure: ladMhXvrZpOe1cdCQEjIfvmnACUzlg3bWkzjKj5dt9lFW4rNfbq2+60RVjbPffcsGPwIHYJrFW+2MeZa55U+ZKoE3oBPxOnRWeoKmGcTiass+zNb3QO3DEwNLy9PsBbkfIKRAO2kNBJn/Jc89DWRoDREHX9dncI8fhnyh6WVxzY=
+  - secure: Q5jAVgJGDFAAKTraXQqEGfMOnMc5VbIV4oUx4iDv8XorP18joObfu18vbbU8m+FHV02wCzj+JGgEzuweOAoFrUrjk4f66Y6GpgK7QqbC/KC8E2fpTAPopgQ/Fq7Fm+MKbw2hewTDSNZH7eNdeN2QFQdOwImdGsmFHWa+LjLacnM=
