@@ -17,3 +17,10 @@ env:
   global:
   - secure: ladMhXvrZpOe1cdCQEjIfvmnACUzlg3bWkzjKj5dt9lFW4rNfbq2+60RVjbPffcsGPwIHYJrFW+2MeZa55U+ZKoE3oBPxOnRWeoKmGcTiass+zNb3QO3DEwNLy9PsBbkfIKRAO2kNBJn/Jc89DWRoDREHX9dncI8fhnyh6WVxzY=
   - secure: Q5jAVgJGDFAAKTraXQqEGfMOnMc5VbIV4oUx4iDv8XorP18joObfu18vbbU8m+FHV02wCzj+JGgEzuweOAoFrUrjk4f66Y6GpgK7QqbC/KC8E2fpTAPopgQ/Fq7Fm+MKbw2hewTDSNZH7eNdeN2QFQdOwImdGsmFHWa+LjLacnM=
+notifications:
+  webhooks:
+    urls:
+      - http://dev.redboxresearchdata.com.au/hooks/travis
+    on_success: always
+    on_failure: never
+    on_start: never
