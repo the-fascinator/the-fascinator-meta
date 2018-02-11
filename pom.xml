@@ -92,6 +92,20 @@
                 <role>Developer</role>
             </roles>
         </developer>
+        <developer>
+            <id>shilob</id>
+            <name>Shilo Banihit</name>
+            <roles>
+                <role>Developer</role>
+            </roles>
+        </developer>
+        <developer>
+            <id>mattredbox</id>
+            <name>Matt Mulholland</name>
+            <roles>
+                <role>Developer</role>
+            </roles>
+        </developer>
     </developers>
     <inceptionYear>2009</inceptionYear>
     <mailingLists>
