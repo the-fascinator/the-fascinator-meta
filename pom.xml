@@ -9,7 +9,7 @@
         <version>7</version>
     </parent>
     <name>The Fascinator Project</name>
-    <version>1.0.4-SNAPSHOT</version>
+    <version>1.0.4</version>
     <description>This Maven project provides a central point for information regarding The Fascinator and its many works.</description>
     <licenses>
         <license>
