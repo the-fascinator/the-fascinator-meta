@@ -9,7 +9,7 @@
         <version>7</version>
     </parent>
     <name>The Fascinator Project</name>
-    <version>1.0.5-SNAPSHOT</version>
+    <version>1.0.6-SNAPSHOT</version>
     <description>This Maven project provides a central point for information regarding The Fascinator and its many works.</description>
     <licenses>
         <license>
@@ -210,7 +210,7 @@
         <!-- Snapshots are not synched with Maven central -->
         <repository>
             <id>fascinator-snapshots</id>
-            <url>http://dev.redboxresearchdata.com.au/nexus/content/repositories/central-snapshots/</url>
+            <url>http://dev.redboxresearchdata.com.au/nexus/content/repositories/sonatype-snapshots-3/</url>
             <releases>
                 <enabled>false</enabled>
             </releases>
