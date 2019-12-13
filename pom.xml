@@ -28,7 +28,7 @@
     </properties>
     <scm>
         <url>https://github.com/the-fascinator/the-fascinator-meta</url>
-        <connection>scm:git:git@github.com:the-fascinator/the-fascinator-meta.git</developerConnection>
+        <connection>scm:git:git@github.com:the-fascinator/the-fascinator-meta.git</connection>
         <developerConnection>scm:git:git@github.com:the-fascinator/the-fascinator-meta.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
